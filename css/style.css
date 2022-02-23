@@ -1,6 +1,8 @@
-<style>
     p::first-letter {
             font-size: 2em;
             font-weight: bold; }
-h1 {style= "background-color: olivedrab; color: white;"}
-</style>
+h1 {background-color: green; color: white;}
+h2 {background-color: green; color: white;}
+p {background-color: olivedrab; color: white;}
+li {background-color: olivedrab; color: white;}
+a {background-color: green; color: white;}
