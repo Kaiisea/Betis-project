@@ -12,8 +12,32 @@
     <h2>Formulario</h2>
     <p>Rellena ya el formulario con los datos de envío para conseguir la nueva camiseta del Beti</p>
     <form action="" method="get">
+        <h3>Inicia sesión con tu cuenta bética</h3>
         <input type="text" name="user-name" placeholder="Escribe tu nombre">
         <input type="password" name="pass" placeholder="Escribe tu nombre">
+        <input type="checkbox" name="Recuerdame"> Recuerdame la siguiente
+        <h3>Elige tu equipasión favorita</h3>
+        <input type="radio" name="primera" value="primera" checked> Primera equipación
+        <input type="radio" name="segunda" value="segunda"> Segunda equipación
+        <input type="radio" name="tercera" value="tercera"> Tercera equipación
+        <br><h4>¿Pa donde la quiere?</h4><select name="Localización">
+            <option value="" selected>Sevilla</option>
+            <option value="">Málaga</option>
+            <option value="">Cadiz</option>
+            <option value="">Huelva</option>
+            <option value="">Cordoba</option>
+            <option value="">Granada</option>
+            <option value="">Almeria</option>
+            <option value="">Jaen</option>
+            <option value="">Mesetarian Este</option>
+            <option value="">Mesetarian Oeste</option>
+            <option value="">Mesetarian Norte</option>
+            <option value="">Latinoamerica</option>
+            <option value="">Resto del mundo</option>
+        </select>
+        <h4>Nombre del jugador y número</h4>
+        <textarea name="Comentarios" cols="40" rows="5" placeholder="Escribe aqui compae"></textarea> 
+        <br><br><input type="submit" value="OLE BETI">
     </form>
 </body>
 </html>
