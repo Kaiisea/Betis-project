@@ -4,9 +4,13 @@
 h1 {background-color: green; color: white;}
 h2 {background-color: green; color: white;}
 h3 {background-color: green; color: white;}
-p {background-color: white; color: olivedrab;}
+p {background-color: white; color: olivedrab; border-radius: 14em;}
 li {color: white;}
 a {background-color: green; color: white;}
-td {border: white 5px solid;}
+td {border: green 5px solid; border-width: 0.5ch;}
 table {border-collapse: collapse; margin: 0 auto;}
-body {background-color: olivedrab; text-align:center}
+:root {background-color: olivedrab; color:white; text-align:center; font-size: 2vmax;}
+.panel {margin-top: 0; font: 0.8rem;
+    font-weight: bold; text-transform: uppercase;}
+.panel > h2 {margin-top: 0; font: 0.8rem;
+font-weight: bold; text-transform: uppercase;}
