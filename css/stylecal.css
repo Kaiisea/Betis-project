@@ -1,0 +1,35 @@
+select {
+  border: solid 3px #e7a614;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+h1 {
+    background-color: #e7a614;
+    color: white;
+    border-radius: 14em;
+  }
+td {
+  background-color: #fafafb;
+  color: #181717;
+  font-size: 20px;
+  border-width: 0.5ch;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.rectangulo {
+  height: 300px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10%;
+  display: inline-block;
+  border: solid 3px #e7a614;
+}
+:root {
+    background-color: #0bb363;
+    color: white;
+    text-align: center;
+    font-size: 2vmax;}

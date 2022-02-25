@@ -35,14 +35,18 @@ td {
   border-width: 0.5ch;
 }
 table {
+  background-color: #fafafb;
   border-collapse: collapse;
   margin: 0 auto;
 }
 .circulo {
-  height: 50px;
-  width: 600px;
+  height: 40px;
+  width: 400px;
   background-color: white;
-  border-radius: 50%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   display: inline-block;
   border: solid 3px #e7a614;
 }
