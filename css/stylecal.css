@@ -1,8 +1,12 @@
+* {
+  margin: 0;
+}
 :root {
   background-color: #0bb363;
   color: white;
   text-align: center;
   font-size: 1vw;
+  --grey: #adb5bd;
 }
 h1 {
   background-color: #e7a614;
@@ -26,7 +30,7 @@ h1 {
 }
 .rectangulo2 {
   width: 70%;
-  height: 23vw;
+  height: 25vw;
   background-color: #f9fafb;
   color: #060c10;
   border-bottom-left-radius: 3rem;
@@ -39,18 +43,32 @@ h1 {
 }
 table {
   margin: auto;
+  margin-top: 0.5em;
 }
 td {
   width: 10rem;
 }
 select {
-  border: 0px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border: 0;
+  border-radius: 1.3rem;
+  padding: 0.6em;
+  min-width: 45%;
+  background-color: var(--grey);
+  border-right: 16px solid transparent;
 }
 td:hover {
   color: #e7a614;
   background-color: #0bb363;
 }
+button {
+  min-width: 45%;
+  font-size: 1rem;
+  border-radius: 1.3rem;
+  background-color: #1650fd;
+  color: #fff;
+  padding: 0.9em 0.6em;
+  margin: 1.3em 0.2em 1.3em;
+}
+button:first-of-type {
+  background-color: #f3f4f6;
+color:#000}
