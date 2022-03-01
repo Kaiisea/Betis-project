@@ -51,5 +51,6 @@ select {
   border-bottom-right-radius: 15px;
 }
 td:hover {
-  color: #ffeaec;
+  color: #e7a614;
+  background-color: #0bb363;
 }
