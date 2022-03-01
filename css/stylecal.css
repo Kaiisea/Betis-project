@@ -40,11 +40,16 @@ h1 {
 table {
   margin: auto;
 }
-td {width:10rem}  
+td {
+  width: 10rem;
+}
 select {
   border: 0px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+td:hover {
+  color: #ffeaec;
 }
