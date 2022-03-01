@@ -1,44 +1,59 @@
 * {
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 :root {
   background-color: #f1eeee;
   color: black;
-  text-align: center;
   font-size: 0.789em;
   --grey: #adb5bd;
 }
 .cuadro {
   background-color: #fff;
-  width: 30rem;
-  height: 35rem;
+  max-width: 55%;
+  /* height: 35rem; */
   margin: 3% auto auto auto;
   border-radius: .3rem;
+  font-size: 1.5rem;
+  padding-bottom: 1em;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #7d808d;
   font-weight: normal;
-  text-align: left;
   padding-left: 4rem;
   padding-top: 4rem;
 }
 p {
-  text-align: left;
   padding-left: 4rem;
 }
 input {
-  border-color: #e0e1e4;
-  text-align: left;
+  border: 1px solid #e0e1e4;
+  border-radius: .6rem;
+  padding: .6em;
+  width: 80%;
+}
+input[type=checkbox]{
+  margin-left: 4rem;
+  margin-bottom: 1em;
+  width: 1em;
 }
 button {
   border-radius: 0.4rem;
   color: white;
   background-color: #5469d4;
-  width: 20rem;
+  width: 80%;
   height: 3rem;
   border: none;
   font-weight: bold;
+
 }
-a {color: #687BD9; text-decoration: none; font-weight: bold; font-size: .9rem;}
-a:first-of-type {font-size: 1.1rem; }
+a {color: #687BD9; text-decoration: none; font-weight: bold; font-size: 1.3rem;}
+a:first-of-type {font-size: 1.7rem; }
+span{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
