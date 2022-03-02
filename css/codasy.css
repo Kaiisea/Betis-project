@@ -9,10 +9,11 @@
 }
 h1 {
   color: #8e94f2;
-  padding-bottom: .6rem;}
+  padding-bottom: 0.6rem;
+}
 h2 {
-    color: #ADA7FF;
-    padding: .6rem;
+  color: #ada7ff;
+  padding: 0.6rem;
 }
 .cuadro {
   background-color: #ddbdfc;
@@ -31,4 +32,13 @@ h2 {
 span {
   color: #757bc8;
 }
-pre {white-space: pre-wrap; padding-left: 1rem; display: block;}
+pre {
+  white-space: pre-wrap;
+  padding-left: 1rem;
+  display: block;
+  font-size: 1.5rem;
+}
+.alineo {
+  text-align: right;
+  padding: 1rem 3rem 0rem 0rem;
+}
