@@ -33,9 +33,9 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 hr {
-  height: .1rem;
+  height: 0.1rem;
   width: 90%;
-  margin: 1.5rem 1rem auto 1rem ;
+  margin: 1.5rem 1rem auto 1rem;
   color: #cccaca;
 }
 p {
@@ -47,4 +47,9 @@ p {
   font-size: 1.5rem;
   padding-bottom: 1em;
 }
-.circulo .circuloRosa;
+.circulo {
+  background-color:;
+}
+.circuloRosa {
+  background-color: #ff9fad;
+}
