@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +8,43 @@
   background-color: #f1eeee;
   font-size: 0.789em;
 }
-.cuadro {background-color: #fff;
-    max-width: 55%;
-    margin: 3% auto auto auto;
-    font-size: 1.5rem;
-    padding-bottom: 1em;}
-
-.cuadroRosa
-.circulo
-.circuloRosa
+.cuadro {
+  background-color: #fff;
+  max-width: 55%;
+  margin: 3% auto auto auto;
+  font-size: 1.5rem;
+  padding-bottom: 1em;
+}
+h1 {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-size: 1.4rem;
+  color: #cccaca;
+  font-weight: normal;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+hr {
+  height: .1rem;
+  width: 90%;
+  margin: 1.5rem 1rem auto 1rem ;
+  color: #cccaca;
+}
+p {
+  padding-left: 2rem;
+}
+.cuadroRosa {
+  background-color: #ff9fad;
+  margin: auto 2rem 1rem 2rem;
+  font-size: 1.5rem;
+  padding-bottom: 1em;
+}
+.circulo .circuloRosa;
