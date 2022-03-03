@@ -45,10 +45,9 @@ p {font-weight: normal;
 .hora {color:black;}
 .tarea {color: #cccaca}
 hr {
-  height: 0.1rem;
-  width: 90%;
-  margin: 1.5rem 1rem auto 1rem;
-  color: #cccaca;
+  height: .1rem;
+  margin: 1.5rem 2rem .1rem 2rem;
+  background-color: #e2e0e0;
 }
 p {
   padding-left: 2rem;
@@ -58,6 +57,7 @@ p {
   margin: auto 2rem 1rem 2rem;
   font-size: 1.5rem;
   padding-bottom: 1em;
+  box-shadow: .2rem .2rem .2rem rgb(212, 210, 210);
 }
 .circulo {
   background-color:;
