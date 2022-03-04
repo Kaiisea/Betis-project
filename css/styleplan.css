@@ -11,7 +11,7 @@
 }
 .cuadro {
   background-color: #fff;
-  max-width: 55%;
+  max-width: 65%;
   margin: 3% auto auto auto;
   font-size: 1.5rem;
   padding-bottom: 1em;
@@ -22,7 +22,6 @@ h1 {
   font-weight: bold;
   padding-left: 2rem;
   padding-top: 3rem;
-  font-size: 2.4rem;;
 }
 h2 {
   font-size: 1.4rem;
@@ -69,14 +68,13 @@ span {
 }
 button {
   border-radius: 100%;
-  padding: 0 0.314rem 0 0.314rem;
   font-size: 2rem;
   font-weight: bolder;
   color: #bfbfc1;
   background-color: white;
-  margin-left: 6rem;
   width: 2.5rem;
   height: 2.5rem;
+  float: right;
 }
 i {
   padding-right: 1rem;
