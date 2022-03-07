@@ -1,3 +1,105 @@
-* {display: inline-flex;
-flex-wrap: wrap;}
-img {width: 10%;}
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Sansita+Swashed:wght@300;500&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 0.785rem;
+}
+nav {
+  background-color: #a2d2ff;
+  border-bottom: 0.3rem solid #cdb4db;
+  border-right: 0.3rem solid #cdb4db;
+  display: block;
+  overflow: hidden;
+}
+nav > ul > li {
+  float: left;
+  border: 0.2rem solid #cdb4db;
+  border-radius: 10%;
+  background-color: #bde0fe;
+  padding: 0.6rem;
+  margin: 0.6rem 0.6rem 0.6rem;
+  font-family: "Sansita Swashed";
+  list-style-type: none;
+}
+nav > ul > li > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #328bdf;
+}
+nav > ul > li:hover {
+  background-color: #cdb4db;
+  border: 0.3rem solid #6b5392;
+  width: 30%;
+  transition-duration: 0.4s;
+}
+nav > ul > li > a:hover {
+  font-family: "Pacifico";
+  font-size: 1.5rem;
+  color: #6b5392;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffc8dd;
+}
+.bandera {
+  text-align: center;
+  border: 0.3rem solid #6b5392;
+  width: 31vw;
+  min-height: 480px;
+  height: 40%;
+  border-radius: 2rem;
+  margin: 1rem 0rem 0rem 1rem;
+  background-color: #cdb4db;
+  font-family: "Sansita Swashed";
+}
+.bandera > h1 {
+  font-family: "Pacifico";
+  font-size: 3rem;
+  font-weight: lighter;
+}
+.bandera > h2 {
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 2.5rem;
+  font-weight: lighter;
+}
+.bandera > h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 2.5rem;
+  font-weight: lighter;
+}
+.bandera:hover {
+  border-color: #6b5392;
+  color: #6b5392;
+}
+.bandera > button {
+  border-radius: 25%;
+  background-color: #6b5392;
+  padding: 0.6rem;
+  margin: 1rem 0.2rem 1rem;
+  font-family: "Pacifico";
+}
+.bandera > button > a {
+  color: #cdb4db;
+  font-size: 1.5rem;
+}
+.bandera > button:hover {
+  border: 0;
+  background-color: #a2d2ff;
+}
+.bandera > button > a:hover {
+  color: #328bdf;
+}
+img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  height: 25vw;
+}
