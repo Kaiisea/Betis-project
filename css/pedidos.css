@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 0.785rem;
+  font-family: "Lato", sans-serif;
+  --blue: #67aeff;
+  --green: #43dcbd;
+  --yellow: #ffbf63;
+  --red: #ff6e86;
+}
+body {display: flex;}
+div {
+  padding: 1.6rem;
+  width: 27vw;
+  color: white;
+  border-radius: 0.4rem;
+  margin: 1rem;
+}
+div > h1 {
+  font-size: 1.2rem;
+}
+div > h2 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+div > i {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+div > p {
+  float: right;
+}
+div > p:first-of-type {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.completados {margin-top: 1rem;}
+.CuadAzul {
+  background-color: var(--blue);
+}
+.CuadVerde {
+    background-color: var(--green);
+  }
+  .CuadAmaril {
+    background-color: var(--yellow);
+  }
+  .CuadRojo {
+    background-color: var(--red);
+  }
