@@ -1,0 +1,32 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 0.785rem;
+}
+body {
+  display: flex;
+}
+div {
+  width: 27vw;
+  height: 40vh;
+  background-color: black;
+  color: white;
+  margin: 1rem;
+}
+div > h1 {
+  font-size: 0.8rem;
+  padding: 1rem 0rem 1rem 1rem;
+}
+.fecha {
+  font-size: 0.56rem;
+  padding: 1rem 0rem 1rem 1rem;
+  color: rgb(158, 157, 157);
+}
+img {
+  height: 75%;
+  width: 100%;
+}
