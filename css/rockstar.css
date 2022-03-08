@@ -17,15 +17,11 @@ div {
   color: white;
   margin: 1rem;
 }
-div > h1 {
+div > small {
   font-size: 0.8rem;
   padding: 1rem 0rem 1rem 1rem;
 }
-.fecha {
-  font-size: 0.56rem;
-  padding: 1rem 0rem 1rem 1rem;
-  color: rgb(158, 157, 157);
-}
+
 img {
   height: 75%;
   width: 100%;
