@@ -5,23 +5,30 @@
   box-sizing: border-box;
 }
 :root {
-  font-size: 0.785rem;
+  font-size: 0.785rem; background-color: #0B0B0B;
 }
 body {
   display: flex;
 }
 div {
-  width: 27vw;
-  height: 40vh;
-  background-color: black;
+  width: 33vw;
+  /*height: 40vh;*/
+  background-color:#000000;
   color: white;
   margin: 1rem;
+  border-radius: .2rem;
+  border: .2px solid #282828;
 }
 div > small {
-  font-size: 0.8rem;
-  padding: 1rem 0rem 1rem 1rem;
+  font-size: 0.7rem;
+  padding: 1rem 0rem 1rem .8rem;
 }
-
+div > small > span {
+  font-size: 0.6rem;
+  color: rgb(173, 170, 170); padding-left: .2rem;
+}
+div > h1 {font-size: .8rem;
+  padding: 0rem 0rem 1rem .8rem;}
 img {
   height: 75%;
   width: 100%;
