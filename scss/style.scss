@@ -11,12 +11,31 @@ $teal: #20c997;
 $cyan: #0dcaf0;
 $dark: #292a2b;
 
+// Declaring a map
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+$font-sizes: (
+  "initial": 0.785rem,
+  "medium": 1.1rem,
+  "large": 1.8rem,
+  "x-large": 2.5rem,
+);
+
 $default-bg-color: $dark;
 body {
   background-color: $default-bg-color;
 }
 .main {
-  width: 200px;
-  height: 200px;
+  //width: 200px;
+  //height: 200px;
   background-color: $green;
+  h1 {
+    font-size: map-get($font-sizes, x-large);
+  }
+  p+p {
+      font-size: map-get($font-sizes, small);
+  }
 }
