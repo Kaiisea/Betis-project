@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        font-size: 0.785rem;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      div {
+        font-family: "Fredoka", sans-serif;
+        background-color: var(--dark);
+        height: 100vh;
+        padding: 2em 3em;
+      }
+      p {
+        max-width: 70%;
+        margin: 2% auto;
+        font-family: "Rubik", sans-serif;
+        font-size: 1.5rem;
+        padding: 0.5em 0.8em;
+        border-radius: 0.3rem;
+        transition: all 0.2s ease-in-out 0.1s;
+      }
+      p:first-of-type::first-letter {
+        font-size: 5em;
+        float: left;
+        padding-right: 0.3em;
+        color: var(--yellow);
+        font-family: "Fredoka", sans-serif;
+      }
+      p:first-of-type:first-line {
+        font-weight: bold;
+      }
+      p:first-of-type {
+        background-color: var(--green);
+      }
+      p:nth-child(even) {
+        background-color: var(--blue);
+        color: #fff;
+      }
+      p:nth-child(odd):not(:first-of-type) {
+        background-color: var(--orange);
+      }
+      p:hover {
+        font-size: 1.8rem !important;
+        background-color: var(--red) !important;
+        transform: rotate(-5deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+        et quas molestias excepturi sint occaecati cupiditate non provident,
+        similique sunt in culpa qui officia deserunt mollitia animi, id est
+        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+        distinctio.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi
+        soluta nam perferendis quasi iste recusandae consequatur aliquid quis
+        totam obcaecati quo sed quod necessitatibus iusto, itaque consectetur,
+        ex illo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        assumenda et pariatur esse tenetur quo! Dolore iste voluptatibus ut,
+        corrupti magnam odio molestias eius. Veritatis autem a ea nihil natus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sed
+        excepturi odio sunt unde harum nisi dicta vero non, ex modi, aperiam
+        illum sint enim laborum rem porro exercitationem omnis?
+      </p>
+    </div>
+  </body>
+</html>
