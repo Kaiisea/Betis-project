@@ -1,6 +1,10 @@
+body {
+  background-color: #292a2b;
+}
+
 .main {
   width: 200px;
   height: 200px;
-  background-color: blue;
+  background-color: #198754;
 }
 /*# sourceMappingURL=style.css.map */
