@@ -1,12 +1,57 @@
-body {
-  background-color: #292a2b;
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.main {
-  background-color: #198754;
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-.main h1 {
-  font-size: 2.5rem;
+/* Functions and mixins */
+.rainbow p:nth-child(1) {
+  background-color: #6f42c1 !important;
+}
+
+.rainbow p:nth-child(2) {
+  background-color: #0dcaf0 !important;
+}
+
+.rainbow p:nth-child(3) {
+  background-color: #198754 !important;
+}
+
+.rainbow p:nth-child(4) {
+  background-color: #ffc107 !important;
+}
+
+.rainbow p:nth-child(5) {
+  background-color: #fd7e14 !important;
+}
+
+.rainbow p:nth-child(6) {
+  background-color: #dc3545 !important;
+}
+
+.message, .rainbow p:nth-child(1), .rainbow p:nth-child(2), .rainbow p:nth-child(3), .rainbow p:nth-child(4), .rainbow p:nth-child(5), .rainbow p:nth-child(6), .message-info, .message-danger {
+  padding: 0.8em 1.5em;
+  border-radius: 1rem;
+  width: 70%;
+  margin: 1em auto;
+}
+
+.message-info {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.message-danger {
+  color: #fff;
+  background-color: #dc3545;
 }
 /*# sourceMappingURL=style.css.map */
