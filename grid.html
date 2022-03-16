@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pseudo Elements</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <title>Placing elements with Grid 2</title>
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
       :root {
         font-size: 0.785rem;
+        font-family: "Rubik", sans-serif;
         --blue: #0d6efd;
         --indigo: #6610f2;
         --purple: #6f42c1;
@@ -25,74 +27,50 @@
         --cyan: #0dcaf0;
         --dark: #292a2b;
       }
-      div {
-        font-family: "Fredoka", sans-serif;
+      section {
+        display: grid;
+        grid-gap: 0.9em;
+        grid-template-columns: repeat(4, 15%);
+        grid-template-rows: 30% 30% 30%;
+        grid-auto-flow: column;
+        justify-content: center;
         background-color: var(--dark);
-        height: 100vh;
-        padding: 2em 3em;
+        height: 50vh;
+        padding: 1em;
       }
-      p {
-        max-width: 70%;
-        margin: 2% auto;
-        font-family: "Rubik", sans-serif;
-        font-size: 1.5rem;
-        padding: 0.5em 0.8em;
-        border-radius: 0.3rem;
-        transition: all 0.2s ease-in-out 0.1s;
-      }
-      p:first-of-type::first-letter {
-        font-size: 5em;
-        float: left;
-        padding-right: 0.3em;
-        color: var(--yellow);
-        font-family: "Fredoka", sans-serif;
-      }
-      p:first-of-type:first-line {
-        font-weight: bold;
-      }
-      p:first-of-type {
+      .box {
         background-color: var(--green);
-      }
-      p:nth-child(even) {
-        background-color: var(--blue);
         color: #fff;
+        border-radius: 0.3rem;
+        padding: 1.2em;
+        font-size: 1.8rem;
       }
-      p:nth-child(odd):not(:first-of-type) {
-        background-color: var(--orange);
+      .box1 {
+        order: 3;
       }
-      p:hover {
-        font-size: 1.8rem !important;
-        background-color: var(--red) !important;
-        transform: rotate(-5deg);
+      
+      .box2 {
+        order: 2;
+      }
+      .box8 {
+        order: 4
       }
     </style>
   </head>
   <body>
-    <div>
-      <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-        et quas molestias excepturi sint occaecati cupiditate non provident,
-        similique sunt in culpa qui officia deserunt mollitia animi, id est
-        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-        distinctio.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi
-        soluta nam perferendis quasi iste recusandae consequatur aliquid quis
-        totam obcaecati quo sed quod necessitatibus iusto, itaque consectetur,
-        ex illo!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        assumenda et pariatur esse tenetur quo! Dolore iste voluptatibus ut,
-        corrupti magnam odio molestias eius. Veritatis autem a ea nihil natus.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sed
-        excepturi odio sunt unde harum nisi dicta vero non, ex modi, aperiam
-        illum sint enim laborum rem porro exercitationem omnis?
-      </p>
-    </div>
+    <section>
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+      <div class="box box11">11</div>
+      <div class="box box12">12</div>
+    </section>
   </body>
 </html>
