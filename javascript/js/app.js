@@ -101,3 +101,11 @@ switch (true) {
     default:
         console.log ("Out of range");
 }
+
+//apuesta
+let totalBest = prompt("Please enter your bet");
+if (totalBest== 5000) {
+ alert("All in!");
+} else {
+ alert("Passing this round.");
+}
