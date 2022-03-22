@@ -43,11 +43,11 @@ if (diasMesElegido == "January") {
 let temperatura = prompt("How many degrees are outside, little butterfly?");
 if (temperatura < 15) {
   alert("Are you not freezed? Warming up the house for god's sake");
-} else if (temperatura >= 15 && temperatura <= 25) {
+} else if (temperatura <= 25) {
   alert("Enjoy the weather sweetie <3");
 } else if (temperatura > 25) {
   alert("Maybe you are too much hot, I will cool you down a bit baby ;)");
-}
+}else {alert("Only numbers are acepted");}
 
 //Semaforo
 var isGreen = true;
@@ -58,8 +58,7 @@ if (isGreen == true) {
 }
 
 //Convertidor de temperaturas
-let celsius = 0;
-
+let celsius = 37;
 switch (celsius) {
   case (celsius = -273.15):
     console.log((farenheit = celsius * 1.8 + 32));
@@ -85,6 +84,7 @@ if (email == "tolkien@lordofrings.com" && password == "aNBR6ZeWPY") {
 } else {
     alert("Wrong password or username, try again");
   }
+
 //Convertidor monetario `
 let euros = 1.0;
 var dolaresAmericanos = euros * 1.1;
@@ -111,23 +111,23 @@ case euros:
 }
 
 //Calculadora de bolsillo
-let x = prompt("Introduce un numerito");
-let y = prompt("Introduce otro");
-let calculo = prompt("¿Que calculo quieres hacer? (no introduzca tildes)");
+let x = parseFloat(prompt("Introduce un numerito"));
+let y = parseFloat(prompt("Introduce otro"));
+let calculo = prompt("¿Que calculo quieres hacer? (suma, resta, multiplicacion o division)");
 if (calculo == "suma") {
-  console.log(parseFloat(x) + parseFloat(y));
+  console.log(x + y);
 } else if (calculo == "resta") {
-  console.log(parseFloat(x) - parseFloat(y));
+  console.log(x - y);
 } else if (calculo == "multiplicacion") {
-  console.log(parseFloat(x) * parseFloat(y));
+  console.log(x * y);
 } else if (calculo == "division") {
-  console.log(parseFloat(x) / parseFloat(y));
+  console.log(x / y);
 }else {
     console.log("chiki, tu no ta enterao de na en las clases de mate de primaria");
 }
 
 //Comprobador de DNI
-let identificacion = prompt("¿Se va a registrar con el DNI o con el NIE?");
+let identificacion = prompt("¿Se va a registrar con el DNI o con el NIE?").toUpperCase;
 switch (identificacion) {
   case "DNI":
     var DNI = prompt("Introduzca su DNI");
@@ -159,8 +159,7 @@ switch (identificacion) {
   case "NIE":
     var NIE = prompt("Introduzca su NIE");
     if (
-      (NIE.charCodeAt(0) == 84,
-      NIE.charCodeAt(0) == 88 &&
+      (NIE.charCodeAt(0) == 84 || NIE.charCodeAt(0) == 88) &&
         NIE.charCodeAt(1) >= 48 &&
         NIE.charCodeAt(1) <= 57 &&
         NIE.charCodeAt(2) >= 48 &&
@@ -186,7 +185,7 @@ switch (identificacion) {
   default:
     alert("Incorrect option");
 }
-
+*/
 //Tirele unos dados
 var x = Math.floor(Math.random() * 6) + 1;
 var y = Math.floor(Math.random() * 6) + 1;
@@ -200,4 +199,4 @@ if (x > y) {
     "Oh-oh, we have a draw between two distinguished gentleman, this cannot remain in this situation, please try again"
   );
 }
-*/
+
