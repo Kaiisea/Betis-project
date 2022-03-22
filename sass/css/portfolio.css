@@ -10560,4 +10560,28 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+nav > ul > li:hover {
+  background-color: #0d6efd;
+  border-radius: .4rem .4rem 0rem 0rem;
+}
+
+nav > ul > li > a:hover {
+  color: #fff;
+}
 /*# sourceMappingURL=portfolio.css.map */
