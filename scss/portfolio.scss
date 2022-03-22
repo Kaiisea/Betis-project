@@ -1,13 +1,2 @@
-@import "./reset";
-@import "./variables";
-@import "./maps";
+@import "../bootstrap-4.3.1/scss/bootstrap.scss"
 
-@function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
-  }
-  @function sizes($sizes) {
-    @return map-get($font-sizes, $sizes);
-  }
-  @function padd($padd) {
-    @return map-get($paddings, $padd);
-  }
