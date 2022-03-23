@@ -10577,11 +10577,30 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 nav > ul > li:hover {
-  background-color: #0d6efd;
-  border-radius: .4rem .4rem 0rem 0rem;
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 
-nav > ul > li > a:hover {
+.firstnav:hover {
+  background-color: #fcf431;
+}
+
+.dropdown:hover {
+  background-color: #9d59d2;
+}
+
+.lastnav:hover {
+  background-color: #000;
+}
+
+nav > ul > li > .nav-link:hover {
   color: #fff;
+}
+
+nav > ul > li > .firstanav:hover {
+  color: #292a2b;
+}
+
+nav > ul > .dropdownli > .dropdown-item:hover {
+  background-color: #0d6efd;
 }
 /*# sourceMappingURL=portfolio.css.map */

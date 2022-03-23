@@ -2,7 +2,26 @@
 @import "./reset";
 @import "./variables";
 @import "./maps";
-
-nav > ul > li:hover {background-color: $blue;
-border-radius: .4rem .4rem 0rem 0rem;}
-nav > ul > li > a:hover {color: $white}
+//Hover nav principal
+nav > ul > li:hover {
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+}
+.firstnav:hover {
+  background-color: $yellownb;
+}
+.dropdown:hover {
+  background-color: $purplenb;
+}
+.lastnav:hover {
+  background-color: $black;
+}
+nav > ul > li > .nav-link:hover {
+  color: $white;
+}
+nav > ul > li > .firstanav:hover {
+  color: $dark;
+}
+//Hover dropdown *En proceso*
+nav > ul > .dropdownli > .dropdown-item:hover {
+  background-color: $blue;
+}

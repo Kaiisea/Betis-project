@@ -185,7 +185,7 @@ switch (identificacion) {
   default:
     alert("Incorrect option");
 }
-*/
+
 //Tirele unos dados
 var x = Math.floor(Math.random() * 6) + 1;
 var y = Math.floor(Math.random() * 6) + 1;
@@ -199,4 +199,4 @@ if (x > y) {
     "Oh-oh, we have a draw between two distinguished gentleman, this cannot remain in this situation, please try again"
   );
 }
-
+*/
