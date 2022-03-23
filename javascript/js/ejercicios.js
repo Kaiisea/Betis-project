@@ -199,4 +199,42 @@ if (x > y) {
     "Oh-oh, we have a draw between two distinguished gentleman, this cannot remain in this situation, please try again"
   );
 }
+
+//lector de palabras inverso
+let palindrome, numero, numero1, numero2;
+for (
+  palindrome = "palindrome", numero = 1, numero1 = 9, numero2 = 10;
+  numero < 11;
+  numero++, numero1--, numero2--
+) {
+  console.log(numero + ". " + palindrome.substring(numero1, numero2));
+}
+
+//no lemon, no melon
+let lemon, numero, numero1, numero2;
+for (
+  lemon = "no lemon, no melon", numero = 1, numero1 = 17, numero2 = 18;
+  numero < 19;
+  numero++, numero1--, numero2--
+) {
+  console.log(lemon.substring(numero1, numero2));
+}
+
+//cuadrado de asteriscos
+let a, number;
+for (a = "****", number = 1; number < 2; ) {
+  number++, console.log(a);
+  for (a = "****", number = 1; number < 2; ) {
+    number++, console.log(a);
+    for (a = "****", number = 1; number < 2; ) {
+      number++, console.log(a);
+      for (a = "****", number = 1; number < 2; ) {
+        number++, console.log(a);
+      }
+    }
+  }
+}
 */
+//Temperatura media
+var t1, t2, t3, t4, t5, t6, t7;
+for(t1=,t2=,t3=,t4,t5=,t6=,t7=){console.log((t1+t2+t3+t4+t5+t6+t7)/7)}

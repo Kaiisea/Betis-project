@@ -1,3 +1,4 @@
+/*
 //Four seasons
 
 //getting real month
@@ -109,3 +110,4 @@ if (totalBest== 5000) {
 } else {
  alert("Passing this round.");
 }
+*/
