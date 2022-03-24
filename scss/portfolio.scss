@@ -22,6 +22,17 @@ nav > ul > li > .firstanav:hover {
   color: $dark;
 }
 //Hover dropdown *En proceso*
-nav > ul > .dropdownli > .dropdown-item:hover {
-  background-color: $blue;
+nav > ul > .dropdown > .dropdown-menu {background-color: $purple;}
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dropdown-item:hover {border: .1px solid $dark}
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr1:hover {
+  background-color: $yellownb;
+}
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr2:hover {
+  background-color: $white;
+}
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr3:hover {
+  background-color: $purplenb;
+}
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr4:hover {
+  background-color: $dark;
 }

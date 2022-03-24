@@ -10600,7 +10600,27 @@ nav > ul > li > .firstanav:hover {
   color: #292a2b;
 }
 
-nav > ul > .dropdownli > .dropdown-item:hover {
-  background-color: #0d6efd;
+nav > ul > .dropdown > .dropdown-menu {
+  background-color: #6f42c1;
+}
+
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dropdown-item:hover {
+  border: 0.1px solid #292a2b;
+}
+
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr1:hover {
+  background-color: #fcf431;
+}
+
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr2:hover {
+  background-color: #fff;
+}
+
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr3:hover {
+  background-color: #9d59d2;
+}
+
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr4:hover {
+  background-color: #292a2b;
 }
 /*# sourceMappingURL=portfolio.css.map */
