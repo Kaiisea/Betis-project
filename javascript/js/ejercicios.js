@@ -234,7 +234,58 @@ for (a = "****", number = 1; number < 2; ) {
     }
   }
 }
-*/
+
 //Temperatura media
-var t1, t2, t3, t4, t5, t6, t7;
-for(t1=,t2=,t3=,t4,t5=,t6=,t7=){console.log((t1+t2+t3+t4+t5+t6+t7)/7)}
+var t1, t2, t3, t4, t5, t6, t7, temperature;
+t1= 14.8,t2= 14.6,t3= 14.7,t4= 14.3,t5= 14.5,t6= 14,t7= 14, temperature=(t1+t2+t3+t4+t5+t6+t7)/7
+console.log(`La temperatura media de la anterior semana fue de ${Math.floor(temperature)} ºC`)
+
+//Adivine el numero
+var x, y, number;
+
+for (x = Math.floor(Math.random() * 11), number = 0; x != y; ) {
+  switch (true) {
+    case true && number == 0:
+      number++;
+      y = prompt(
+        "Las tornas han cambiado, Akinator ha elegido un número y ahora serás tu quien tenga que adivinar en cuál ha pensado en unicamente tres intentos. ¿Tienes alguna ligera idea?"
+      );
+      break;
+    case true && number == 1:
+      number++;
+      y = prompt(
+        "Uy, estuvo cerca, bueno, para que mentirte, en realidad no. Pero miralo por el lado bueno, tienes una segunda oportunidad ¿Cuál sera tu elección ahora?"
+      );
+      break;
+    case true && number == 2:
+      number++;
+      y = prompt(
+        "A Akinator le estas empezando a dar penita, por eso te da una ultima oportunidad, pero ninguna más ¿Entendido? Pues dale ¿Cuál es tu ultima elección?"
+      );
+      break;
+    case true && number == 3:
+      number++;
+      y = x;
+      break;
+    default:
+      console.log("No sé que has hecho pero la has liao, reinicia la página");
+  }
+}
+if (number == 1) {
+  console.log(
+    `Sii, Akinator había pensado en el número ${x}, ¡lo sacaste a la primera! ¡Eres más adivine que el propio Akinator!`
+  );
+} else if (number == 2) {
+  console.log(
+    `Efectivamente, Akinator había pensado en el número ${x}, ¡lo sacaste a la segunda! ¡Akinator te envidia un poquito, pero no mucho!`
+  );
+} else if (number == 3) {
+  console.log(
+    `Sii, Akinator había pensado en el número ${x}, ¡lo sacaste en el último intento! ¡Te falta un poquito de entrenamiento más para ser igual de fantastibuloso que el gran Akinator!`
+  );
+} else if (number == 4){
+  console.log(
+    `Lo siento pequeño aprendiz, pero has perdido la oportunidad de asemejarte al gran Akinator. El número que este había pensado era el ${x}`
+  );
+}
+*/

@@ -8,7 +8,7 @@ while(count < 10){
 console.log("diselo tata")
 
 //March calendar
-let monthDays = new Date(202, 3, 0).getDate();
+let monthDays = new Date(2022, 3, 0).getDate();
 console.log(monthDays);
 let day = 1;
 let firstDay = new Date("March 1, 2022").getDay();
