@@ -289,3 +289,67 @@ if (number == 1) {
   );
 }
 */
+//Randomizando contraseñas
+let longitud = 8,
+  respuesta = "",
+  minusculas = false,
+  mayusculas = false,
+  numeros = false,
+  simbolos = false;
+longitud = parseInt(
+  prompt(
+    "¿Cuanto quiere que ocupe su contraseña?",
+    "Mínimo de 8 carácteres y un máximo de 16)"
+  )
+);
+respuesta = prompt(
+  "¿Quiere usar minusculas en su contraseña? (Si / No)"
+).toLowerCase();
+if (respuesta == "si") {
+  minusculas = true;
+}
+respuesta = prompt(
+  "¿Quiere usar mayusculas en su contraseña? (Si / No)"
+).toLowerCase();
+if (respuesta == "si") {
+  mayusculas = true;
+}
+respuesta = prompt(
+  "¿Quiere usar numeros en su contraseña? (Si / No)"
+).toLowerCase();
+if (respuesta == "si") {
+  numeros = true;
+}
+respuesta = prompt(
+  "¿Quiere usar simbolos en su contraseña? (Si / No)"
+).toLowerCase();
+if (respuesta == "si") {
+  simbolos = true;
+}
+//Añadir char
+let contrasena= "", posicion, char = "", n1, n2;
+if (minusculas == true) {
+  char += `abcdefghijklmnñopqrstuvwxyz`;
+}
+if (mayusculas == true) {
+  char += `ABCDEFGHIJKLMNÑOPQRSTUVWXYZ`;
+}
+if (numeros == true) {
+  char += `1234567890`;
+}
+if (simbolos == true) {
+  char += `,;.:-*_+-/?¿¡!"#`;
+}
+if (
+  minusculas == false &&
+  mayusculas == false &&
+  numeros == false &&
+  simbolos == false
+) {
+  char = `abcdefghijklmnñopqrstuvwxyz`;
+}
+for (posicion= 0, n1= 0, n2= 1; posicion > longitud; posicion++){  
+contrasena.substring(n1, n2) = Math.floor(Math.random()*char.length); 
+n1++; 
+n2++;}
+alert(contrasena)
