@@ -239,58 +239,55 @@ for (a = "****", number = 1; number < 2; ) {
 var t1, t2, t3, t4, t5, t6, t7, temperature;
 t1= 14.8,t2= 14.6,t3= 14.7,t4= 14.3,t5= 14.5,t6= 14,t7= 14, temperature=(t1+t2+t3+t4+t5+t6+t7)/7
 console.log(`La temperatura media de la anterior semana fue de ${Math.floor(temperature)} ºC`)
-
+*/
 //Adivine el numero
-var x, y, number;
+let x, y, number;
 
-for (x = Math.floor(Math.random() * 11), number = 0; x != y; ) {
-  switch (true) {
-    case true && number == 0:
-      number++;
+for (x = Math.floor(Math.random() * 10), number = 0; x != y; number++) {
+  console.log(x);
+  switch (number) {
+    case 0:
       y = prompt(
         "Las tornas han cambiado, Akinator ha elegido un número y ahora serás tu quien tenga que adivinar en cuál ha pensado en unicamente tres intentos. ¿Tienes alguna ligera idea?"
       );
       break;
-    case true && number == 1:
-      number++;
+    case 1:
       y = prompt(
         "Uy, estuvo cerca, bueno, para que mentirte, en realidad no. Pero miralo por el lado bueno, tienes una segunda oportunidad ¿Cuál sera tu elección ahora?"
       );
       break;
-    case true && number == 2:
-      number++;
+    case 2:
       y = prompt(
         "A Akinator le estas empezando a dar penita, por eso te da una ultima oportunidad, pero ninguna más ¿Entendido? Pues dale ¿Cuál es tu ultima elección?"
       );
       break;
-    case true && number == 3:
-      number++;
+    case 3:
       y = x;
       break;
     default:
-      console.log("No sé que has hecho pero la has liao, reinicia la página");
+      alert("No sé que has hecho pero la has liao, reinicia la página");
   }
 }
 if (number == 1) {
-  console.log(
+  alert(
     `Sii, Akinator había pensado en el número ${x}, ¡lo sacaste a la primera! ¡Eres más adivine que el propio Akinator!`
   );
 } else if (number == 2) {
-  console.log(
+  alert(
     `Efectivamente, Akinator había pensado en el número ${x}, ¡lo sacaste a la segunda! ¡Akinator te envidia un poquito, pero no mucho!`
   );
 } else if (number == 3) {
-  console.log(
+  alert(
     `Sii, Akinator había pensado en el número ${x}, ¡lo sacaste en el último intento! ¡Te falta un poquito de entrenamiento más para ser igual de fantastibuloso que el gran Akinator!`
   );
-} else if (number == 4){
-  console.log(
+} else if (number == 4) {
+  alert(
     `Lo siento pequeño aprendiz, pero has perdido la oportunidad de asemejarte al gran Akinator. El número que este había pensado era el ${x}`
   );
 }
-*/
+/*
 //Randomizando contraseñas
-let longitud = 8,
+let longitud = "",
   respuesta = "",
   minusculas = false,
   mayusculas = false,
@@ -302,54 +299,67 @@ longitud = parseInt(
     "Mínimo de 8 carácteres y un máximo de 16)"
   )
 );
-respuesta = prompt(
-  "¿Quiere usar minusculas en su contraseña? (Si / No)"
-).toLowerCase();
-if (respuesta == "si") {
-  minusculas = true;
+if (longitud >= 8 && longitud <= 16) {
+  alert(
+    `Su contraseña ocupará ${longitud} caracteres, ahora elija que tipo quiere usar`
+  );
+  respuesta = prompt(
+    "¿Quiere usar minusculas en su contraseña? (Si / No)"
+  ).toLowerCase();
+  if (respuesta == "si") {
+    minusculas = true;
+  }
+  respuesta = prompt(
+    "¿Quiere usar mayusculas en su contraseña? (Si / No)"
+  ).toLowerCase();
+  if (respuesta == "si") {
+    mayusculas = true;
+  }
+  respuesta = prompt(
+    "¿Quiere usar numeros en su contraseña? (Si / No)"
+  ).toLowerCase();
+  if (respuesta == "si") {
+    numeros = true;
+  }
+  respuesta = prompt(
+    "¿Quiere usar simbolos en su contraseña? (Si / No)"
+  ).toLowerCase();
+  if (respuesta == "si") {
+    simbolos = true;
+  }
+  //Añadir char
+  let contrasena = "",
+    posicion,
+    char = "",
+    n1,
+    n2;
+  if (minusculas == true) {
+    char += `abcdefghijklmnñopqrstuvwxyz`;
+  }
+  if (mayusculas == true) {
+    char += `ABCDEFGHIJKLMNÑOPQRSTUVWXYZ`;
+  }
+  if (numeros == true) {
+    char += `1234567890`;
+  }
+  if (simbolos == true) {
+    char += `,;.:-*_+-/?¿¡!"#`;
+  }
+  if (
+    minusculas == false &&
+    mayusculas == false &&
+    numeros == false &&
+    simbolos == false
+  ) {
+    char = `abcdefghijklmnñopqrstuvwxyz`;
+  }
+  //Bucle for
+  for (posicion = 0; posicion < longitud; posicion++) {
+    contrasena += char.charAt(Math.floor(Math.random() * char.length));
+  }
+  alert(contrasena);
+} else {
+  longitud = alert("Longitud de contraseña incorrecta");
+  location.reload();
 }
-respuesta = prompt(
-  "¿Quiere usar mayusculas en su contraseña? (Si / No)"
-).toLowerCase();
-if (respuesta == "si") {
-  mayusculas = true;
-}
-respuesta = prompt(
-  "¿Quiere usar numeros en su contraseña? (Si / No)"
-).toLowerCase();
-if (respuesta == "si") {
-  numeros = true;
-}
-respuesta = prompt(
-  "¿Quiere usar simbolos en su contraseña? (Si / No)"
-).toLowerCase();
-if (respuesta == "si") {
-  simbolos = true;
-}
-//Añadir char
-let contrasena= "", posicion, char = "", n1, n2;
-if (minusculas == true) {
-  char += `abcdefghijklmnñopqrstuvwxyz`;
-}
-if (mayusculas == true) {
-  char += `ABCDEFGHIJKLMNÑOPQRSTUVWXYZ`;
-}
-if (numeros == true) {
-  char += `1234567890`;
-}
-if (simbolos == true) {
-  char += `,;.:-*_+-/?¿¡!"#`;
-}
-if (
-  minusculas == false &&
-  mayusculas == false &&
-  numeros == false &&
-  simbolos == false
-) {
-  char = `abcdefghijklmnñopqrstuvwxyz`;
-}
-for (posicion= 0, n1= 0, n2= 1; posicion > longitud; posicion++){  
-contrasena.substring(n1, n2) = Math.floor(Math.random()*char.length); 
-n1++; 
-n2++;}
-alert(contrasena)
+*/
