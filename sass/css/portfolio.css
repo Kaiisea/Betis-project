@@ -10576,6 +10576,18 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
 }
 
+.light {
+  background-color: #c790cd #6f42c1, 50%;
+  color: #200f21 #292a2b, 100%;
+}
+
+nav > .container-fluid > .d-flex > .btn-outline-success {
+  padding: .3rem;
+  width: 3.5rem;
+  font-size: .9rem;
+  margin-right: -1.5rem;
+}
+
 nav > ul > li:hover {
   border-radius: 0.4rem 0.4rem 0rem 0rem;
 }

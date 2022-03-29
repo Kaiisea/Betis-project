@@ -6,14 +6,24 @@
 //Mixin
 @mixin theme($light-theme: true) {
   @if $light-theme {
-    background-color: lighten($bg-color, 50%);
-    color: darken($color, 100%);
+    background-color: $ligthen($bg-color, 50%);
+    color: $darken($color, 100%);
   } @else {
-    background-color: darken($bg-color, 50%);
-    color: lighten($color, 100%);
+    background-color: $darken($bg-color, 50%);
+    color: $ligthen($color, 100%);
   }
-};
-.light {@include theme($light-theme: true)};
+}
+//clases
+.light {
+  @include theme($light-theme: true);
+}
+//cambios especificos
+nav > .container-fluid > .d-flex > .btn-outline-success {
+  padding: .3rem;
+  width: 3.5rem;
+  font-size: .9rem;
+  margin-right: -1.5rem;
+}
 //Hover nav principal
 nav > ul > li:hover {
   border-radius: 0.4rem 0.4rem 0rem 0rem;
@@ -34,8 +44,12 @@ nav > ul > li > .firstanav:hover {
   color: $dark;
 }
 //Hover dropdown
-nav > ul > .dropdown > .dropdown-menu {background-color: $purple;}
-nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dropdown-item:hover {border: .1px solid $dark}
+nav > ul > .dropdown > .dropdown-menu {
+  background-color: $purple;
+}
+nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dropdown-item:hover {
+  border: 0.1px solid $dark;
+}
 nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr1:hover {
   background-color: $yellownb;
 }
