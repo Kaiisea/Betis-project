@@ -123,7 +123,7 @@ if (emailLogged == login.email && passLogged == login.password) {
 } else {
   alert(`Your loggin data are not correct`);
 }
-*/
+
 let hero = {
   character: "Iron Man",
   name: "Tony Stark",
@@ -149,32 +149,83 @@ hero.powers = [
   "breathing underwater",
 ];
 
-let shoppingCart = {};
-shoppingCart.one = {
+let shoppingCart = {
+  0: {
   product_id: 0,
   name: "cebolla",
   price: 0.5,
   quantity: "2 kilos",
-};
-shoppingCart.two = {
+},
+1: {
   product_id: 1,
   name: "pimiento",
   price: 0.73,
   quantity: "1 kilo y medio",
-};
-shoppingCart.three = {
+},
+2: {
   product_id: 2,
   name: "champinones",
   price: 0.37,
   quantity: "1/2 kilo",
-};
-shoppingCart.four = {
+},
+3: {
   product_id: 4,
   name: "calabacin",
   price: 1,
   quantity: "4 kilos",
-};
-console.log(`id: ${shoppingCart.one.product_id}, name: ${shoppingCart.one.name}
-id: ${shoppingCart.one.product_id}, name: ${shoppingCart.two.name}
-id: ${shoppingCart.three.product_id}, name: ${shoppingCart.three.name}
-id: ${shoppingCart.four.product_id}, name: ${shoppingCart.four.name}`)
+}};
+for (let i = 0; i < Object.keys(shoppingCart).length; i++) {
+  let id= shoppingCart[i].product_id;
+  let name = shoppingCart[i].name;
+  console.log("id: ", id, " name: ", name);
+}
+
+let original = [1, 2, 3];
+let originalIncreased = [0, ...original, 4];
+let copy = [...original];
+let hexvalues = [..."0123456789ABCDEF"];
+let colors = ["red", "blue", "green"];
+alert(colors[0]);
+colors[2] = "black";
+colors[3] = "brown";
+alert(colors.length);
+colors[colors.length] = "black";
+colors[colors.length] = "white";
+let checking = ["foo", "bar", "baz", "qux"];
+console.log(Array.from(checking.keys()));
+console.log(Array.from(checking.values()));
+console.log(Array.from(checking.entries()));
+
+let moreNumbers = [0, 1, 5, 10, 15];
+function compare (value1, value2) {
+  if (value1 < value2) {
+    return -1;
+  } else if (value1 > value2) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+moreNumbers.sort(compare);
+
+var numbers = [4, 2, 5, 1, 3, 7, 7, 9, -1];
+let counter = 0;
+numbers.sort(function (a, b) {
+  counter++;
+  console.log("a:", a);
+  console.log("b:", b);
+  console.log(a - b);
+  return a - b;
+});
+console.log(numbers);
+console.log(counter);
+*/
+let numbers = [3, 9, 8, 1, 4]
+for (let index = 0; index < numbers.length - 2; index++) {
+for (let j = 0; aux = 0; j < numbers.length - 1; j++){
+  if (numbers[j] > numbers[j + 1]) {
+    aux = numbers[j];
+    numbers 
+  }
+}
+}
