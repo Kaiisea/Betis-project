@@ -24,6 +24,9 @@ nav > .container-fluid > .d-flex > .btn-outline-success {
   font-size: .9rem;
   margin-right: -1.5rem;
 }
+nav > div > .navbar-brand {
+  font-size: 1rem;
+}
 //Hover nav principal
 nav > ul > li:hover {
   border-radius: 0.4rem 0.4rem 0rem 0rem;
