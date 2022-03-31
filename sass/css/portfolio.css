@@ -10576,11 +10576,19 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
 }
 
-.light {
-  background-color: #c790cd #6f42c1, 50%;
-  color: #200f21 #292a2b, 100%;
+/*@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background-color: $ligthen($bg-color, 50%);
+    color: $darken($color, 100%);
+  } @else {
+    background-color: $darken($bg-color, 50%);
+    color: $ligthen($color, 100%);
+  }
 }
-
+//clases
+.light {
+  @include theme($light-theme: true);
+}*/
 nav > .container-fluid > .d-flex > .btn-outline-success {
   padding: .3rem;
   width: 3.5rem;
@@ -10588,6 +10596,17 @@ nav > .container-fluid > .d-flex > .btn-outline-success {
   margin-right: -1.5rem;
 }
 
+/*nav > div > a > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-bottom: .4rem;
+}
+nav > div > .navbar-brand {
+  font-size: .8rem;
+}
+nav > div > ul > li > a {
+  font-size: .6rem;
+}*/
 nav > ul > li:hover {
   border-radius: 0.4rem 0.4rem 0rem 0rem;
 }

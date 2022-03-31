@@ -4,7 +4,7 @@
 @import "./maps";
 
 //Mixin
-@mixin theme($light-theme: true) {
+/*@mixin theme($light-theme: true) {
   @if $light-theme {
     background-color: $ligthen($bg-color, 50%);
     color: $darken($color, 100%);
@@ -16,17 +16,27 @@
 //clases
 .light {
   @include theme($light-theme: true);
-}
+}*/
 //cambios especificos
 nav > .container-fluid > .d-flex > .btn-outline-success {
   padding: .3rem;
   width: 3.5rem;
   font-size: .9rem;
   margin-right: -1.5rem;
+  @media (min-width: @screen-sm-min) {
+
+  }};
+/*nav > div > a > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-bottom: .4rem;
 }
 nav > div > .navbar-brand {
-  font-size: 1rem;
+  font-size: .8rem;
 }
+nav > div > ul > li > a {
+  font-size: .6rem;
+}*/
 //Hover nav principal
 nav > ul > li:hover {
   border-radius: 0.4rem 0.4rem 0rem 0rem;
