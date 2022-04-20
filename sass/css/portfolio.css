@@ -10584,7 +10584,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 nav > .container-fluid > a {
   color: #ffd17e;
-  font-family: 'Square Peg', cursive;
+  font-family: "Square Peg", cursive;
   font-size: 2rem;
 }
 
@@ -10599,13 +10599,13 @@ nav > .container-fluid > a {
 
 .navbar > div > ul > li:hover {
   background-color: #9d59d2;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   border-bottom: 3px solid #ffd17e;
 }
 
 nav > div > a > img {
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 nav {
@@ -10641,16 +10641,16 @@ header > div {
 }
 
 header > div h1 {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 }
 
 header > div p {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: bold;
 }
 
 header > div .btn {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
   background-color: #ffd17e;
 }
 
@@ -10681,7 +10681,7 @@ header > div .btn:hover {
 
 #projects > div > .card div > .btn {
   background-color: #ffd17e;
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 }
 
 #divIcon {
@@ -10690,15 +10690,33 @@ header > div .btn:hover {
 
 #h1Title {
   color: #ffd17e;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 #h2Title {
   color: #ffd17e;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
+  color: #7b2b80;
+  padding-top: 0.4rem;
 }
 
 #catIcon {
   margin-top: 1.3rem;
+}
+
+#mediumIcon {
+  color: #7b2b80;
+  margin-top: 1.3rem;
+}
+
+#lettersNoDiv {
+  color: #ffd17e;
+}
+
+#verticalhr {
+  height: 3rem;
+  width: 2.4px;
+  margin: 0 .8rem 0;
+  color: black;
 }
 /*# sourceMappingURL=portfolio.css.map */

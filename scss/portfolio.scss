@@ -2,106 +2,121 @@
 @import "variables.scss";
 @import "maps.scss";
 @import "../bootstrap-4.3.1/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Patrick+Hand&family=Public+Sans:wght@200;300;400;500&family=Square+Peg&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Patrick+Hand&family=Public+Sans:wght@200;300;400;500&family=Square+Peg&display=swap");
 :root {
-    background-color: $dark;
-    color: $letter;
+  background-color: $dark;
+  color: $letter;
 }
 nav > .container-fluid > a {
-    color: $yellowIcon;
-    font-family: 'Square Peg', cursive;
-    font-size: 2rem;
+  color: $yellowIcon;
+  font-family: "Square Peg", cursive;
+  font-size: 2rem;
 }
 .navbar > div > ul > li > a {
-    color: $yellowIcon;
-    &:hover {
-        color: $dark;
-        font-weight: bold;
-    }
+  color: $yellowIcon;
+  &:hover {
+    color: $dark;
+    font-weight: bold;
+  }
 }
 .navbar > div > ul > li:hover {
-    background-color: $purplenb;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    border-bottom: 3px solid $yellowIcon;
+  background-color: $purplenb;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 3px solid $yellowIcon;
 }
 nav > div > a > img {
-    border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 nav {
-    background-color: $dark;
+  background-color: $dark;
 }
 nav > div > form > .btn {
-    background-color: $yellowIcon;
-    &:hover {
-        background-color: $yellownb;
-    }
+  background-color: $yellowIcon;
+  &:hover {
+    background-color: $yellownb;
+  }
 }
 .dropdown-menu > .dropdownli {
-    & .dropdown-item {
+  & .dropdown-item {
     color: $yellowIcon;
 
     &:hover {
-    background-color: $purplenb;
-}
-    & hr {
-        color: $yellowIcon;
+      background-color: $purplenb;
     }
-}
+    & hr {
+      color: $yellowIcon;
+    }
+  }
 }
 header {
-    background-color: $dark;
+  background-color: $dark;
 }
 header > div {
-    background-color: $purplenb;
+  background-color: $purplenb;
 }
-header > div{
-    & h1 {
-    font-family: 'Patrick Hand', cursive;
-    }
-    & p {
-    font-family: 'Cormorant Garamond', serif;
+header > div {
+  & h1 {
+    font-family: "Patrick Hand", cursive;
+  }
+  & p {
+    font-family: "Cormorant Garamond", serif;
     font-weight: bold;
-    }
-    & .btn {
-    font-family: 'Patrick Hand', cursive;
+  }
+  & .btn {
+    font-family: "Patrick Hand", cursive;
     background-color: $yellowIcon;
     &:hover {
-    border: 1px solid $dark;
+      border: 1px solid $dark;
     }
-}
+  }
 }
 .fa-arrow-pointer {
-    color: $purpledark;
+  color: $purpledark;
 }
 #projects {
-    background-color: $dark;
+  background-color: $dark;
 }
 #projects > div > .card {
-    background-color: $purplenb;
+  background-color: $purplenb;
+  color: $letter;
+  & div > h5 {
     color: $letter;
-    & div > h5 {
-        color: $letter;
-    }
-    & div > p {
-        color: $letter;
-    }
-    & div > .btn {
-        background-color: $yellowIcon;
-        font-family: 'Patrick Hand', cursive;
-    }
+  }
+  & div > p {
+    color: $letter;
+  }
+  & div > .btn {
+    background-color: $yellowIcon;
+    font-family: "Patrick Hand", cursive;
+  }
 }
 #divIcon {
-    background-color: $yellowIcon
+  background-color: $yellowIcon;
 }
 #h1Title {
-    color: $yellowIcon;
-    font-family: 'Cormorant Garamond', serif;
+  color: $yellowIcon;
+  font-family: "Cormorant Garamond", serif;
 }
 #h2Title {
-    color: $yellowIcon;
-    font-family: 'Cormorant Garamond', serif;
+  color: $yellowIcon;
+  font-family: "Cormorant Garamond", serif;
+  color: $purpledark;
+  padding-top: 0.4rem;
 }
 #catIcon {
-    margin-top: 1.3rem;
+  margin-top: 1.3rem;
+}
+#mediumIcon {
+  color: $purpledark;
+  margin-top: 1.3rem;
+}
+#lettersNoDiv {
+  color: $yellowIcon;
+}
+#verticalhr {
+  height: 3rem;
+  width: 2.4px;
+  margin: 0 .8rem 0;
+  color: black;
 }
