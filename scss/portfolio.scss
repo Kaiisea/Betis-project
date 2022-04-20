@@ -1,77 +1,107 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "maps.scss";
 @import "../bootstrap-4.3.1/scss/bootstrap.scss";
-@import "./reset";
-@import "./variables";
-@import "./maps";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Patrick+Hand&family=Public+Sans:wght@200;300;400;500&family=Square+Peg&display=swap');
+:root {
+    background-color: $dark;
+    color: $letter;
+}
+nav > .container-fluid > a {
+    color: $yellowIcon;
+    font-family: 'Square Peg', cursive;
+    font-size: 2rem;
+}
+.navbar > div > ul > li > a {
+    color: $yellowIcon;
+    &:hover {
+        color: $dark;
+        font-weight: bold;
+    }
+}
+.navbar > div > ul > li:hover {
+    background-color: $purplenb;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom: 3px solid $yellowIcon;
+}
+nav > div > a > img {
+    border-radius: .2rem;
+}
+nav {
+    background-color: $dark;
+}
+nav > div > form > .btn {
+    background-color: $yellowIcon;
+    &:hover {
+        background-color: $yellownb;
+    }
+}
+.dropdown-menu > .dropdownli {
+    & .dropdown-item {
+    color: $yellowIcon;
 
-//Mixin
-/*@mixin theme($light-theme: true) {
-  @if $light-theme {
-    background-color: $ligthen($bg-color, 50%);
-    color: $darken($color, 100%);
-  } @else {
-    background-color: $darken($bg-color, 50%);
-    color: $ligthen($color, 100%);
-  }
+    &:hover {
+    background-color: $purplenb;
 }
-//clases
-.light {
-  @include theme($light-theme: true);
-}*/
-//cambios especificos
-nav > .container-fluid > .d-flex > .btn-outline-success {
-  padding: .3rem;
-  width: 3.5rem;
-  font-size: .9rem;
-  margin-right: -1.5rem;
-  @media (min-width: @screen-sm-min) {
-
-  }};
-/*nav > div > a > img {
-  width: 1.5rem;
-  height: 1.5rem;
-  padding-bottom: .4rem;
+    & hr {
+        color: $yellowIcon;
+    }
 }
-nav > div > .navbar-brand {
-  font-size: .8rem;
 }
-nav > div > ul > li > a {
-  font-size: .6rem;
-}*/
-//Hover nav principal
-nav > ul > li:hover {
-  border-radius: 0.4rem 0.4rem 0rem 0rem;
+header {
+    background-color: $dark;
 }
-.firstnav:hover {
-  background-color: $yellownb;
+header > div {
+    background-color: $purplenb;
 }
-.dropdown:hover {
-  background-color: $purplenb;
+header > div{
+    & h1 {
+    font-family: 'Patrick Hand', cursive;
+    }
+    & p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    }
+    & .btn {
+    font-family: 'Patrick Hand', cursive;
+    background-color: $yellowIcon;
+    &:hover {
+    border: 1px solid $dark;
+    }
 }
-.lastnav:hover {
-  background-color: $black;
 }
-nav > ul > li > .nav-link:hover {
-  color: $white;
+.fa-arrow-pointer {
+    color: $purpledark;
 }
-nav > ul > li > .firstanav:hover {
-  color: $dark;
+#projects {
+    background-color: $dark;
 }
-//Hover dropdown
-nav > ul > .dropdown > .dropdown-menu {
-  background-color: $purple;
+#projects > div > .card {
+    background-color: $purplenb;
+    color: $letter;
+    & div > h5 {
+        color: $letter;
+    }
+    & div > p {
+        color: $letter;
+    }
+    & div > .btn {
+        background-color: $yellowIcon;
+        font-family: 'Patrick Hand', cursive;
+    }
 }
-nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dropdown-item:hover {
-  border: 0.1px solid $dark;
+#divIcon {
+    background-color: $yellowIcon
 }
-nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr1:hover {
-  background-color: $yellownb;
+#h1Title {
+    color: $yellowIcon;
+    font-family: 'Cormorant Garamond', serif;
 }
-nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr2:hover {
-  background-color: $white;
+#h2Title {
+    color: $yellowIcon;
+    font-family: 'Cormorant Garamond', serif;
 }
-nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr3:hover {
-  background-color: $purplenb;
-}
-nav > ul > .dropdown > .dropdown-menu > .dropdownli > .dr4:hover {
-  background-color: $dark;
+#catIcon {
+    margin-top: 1.3rem;
 }
