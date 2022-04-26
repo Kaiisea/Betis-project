@@ -1,0 +1,5 @@
+.Tarjeta-container {
+    border: 2px solid ${props.color},
+        marginLeft: 16,
+        marginRight: 16,
+}
